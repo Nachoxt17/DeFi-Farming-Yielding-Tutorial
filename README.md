@@ -1,2 +1,2 @@
 # DeFi-Tutorial
-This DeFi App made for the Ethereum Blockchain in Solidity language consists of a Digital Bank in which you can deposit DAI ERC-20 Tokens (Which is a Fictitious Token made in the image of the Original) and by doing so and keeping the DAIs in the Digital Bank you can earn interest in Dapp ERC-20 Tokens (Made specifically for the Application).
+This DeFi App made for the Ethereum Blockchain in Solidity language consists of a Digital Bank in which you can deposit mockDAI ERC-20 Tokens (Which is a Fictitious Token made in the image of the Original DAI) and by doing so and keeping the mockDAIs in the Digital Bank you can earn Yield interest in Dapp ERC-20 Tokens(Made specifically for the Application) thanks to the TokenFarm.sol Contract.
