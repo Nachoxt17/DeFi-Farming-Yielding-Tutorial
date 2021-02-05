@@ -12,4 +12,13 @@ contract TokenFarm {
     dappToken = _dappToken;
     daiToken = _daiToken;
   }
+
+  /**+-1-Stakes Tokens(Deposit):_*/
+    function stakeTokens(uint _amount) public {
+      
+    }
+  /**+-2-Unstaking Tokens(Withdraw):_*/
+
+  /**+-2-Issuing Tokens(Earn Interests):_*/
+
 }
