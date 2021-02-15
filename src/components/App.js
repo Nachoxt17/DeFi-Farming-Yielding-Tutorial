@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from "react";
 import Web3 from "web3";
 import DaiToken from "../abis/DaiToken.json";
 import DappToken from "../abis/DappToken.json";
 import TokenFarm from "../abis/TokenFarm.json";
 import Navbar from "./Navbar";
+import Main from "./Main";
 import "./App.css";
 
 class App extends Component {
@@ -100,6 +102,25 @@ class App extends Component {
   }
 
   render() {
+    let content;
+    if (this.state.loading) {
+      content = (
+        <p id="loader" className="text-center">
+          Loading...
+        </p>
+      );
+    } else {
+      content = (
+        <Main
+          daiTokenBalance={this.state.daiTokenBalance}
+          dappTokenBalance={this.state.dappTokenBalance}
+          stakingBalance={this.state.stakingBalance}
+          //stakeTokens={this.state.stakeTokens}
+          //unstakeTokens={this.unstakeTokens}
+        />
+      );
+    }
+
     return (
       <div>
         <Navbar account={this.state.account} />
@@ -116,8 +137,7 @@ class App extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 ></a>
-
-                <h1>Hello, World!</h1>
+                {content}
               </div>
             </main>
           </div>
