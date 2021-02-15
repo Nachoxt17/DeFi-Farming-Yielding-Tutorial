@@ -22,6 +22,45 @@ class Main extends Component {
             </td>
           </tr>
         </table>
+
+        <div className="card mb-4">
+          <div className="card-body">
+            <form>
+              <div>
+                <label className="float-left">
+                  <b>Stake Tokens</b>
+                </label>
+                <span className="float-right text-muted">
+                  Balance:{" "}
+                  {window.web3.utils.fromWei(
+                    this.props.daiTokenBalance,
+                    "Ether"
+                  )}
+                </span>
+              </div>
+              <div className="input-group mb-4">
+                <input
+                  type="text"
+                  className="form-control form-control-lg"
+                  placeholder="0"
+                  required
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <img src={dai} height="32" alt="" />
+                    &nbsp;&nbsp;&nbsp; mDAI
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary btn-block btn-lg"
+              >
+                STAKE!
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     );
   }
