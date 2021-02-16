@@ -9,4 +9,4 @@ https://www.linkedin.com/pulse/using-ganache-ethereum-emulator-metamask-farhan-k
 
 +-(2)-Login with the Metamask-Ganache Trial Account on the Page and write a Number of Tokens to Staking, and then press the "STAKE!" Button and confirm the transaction in Metamask.
 
-+-(3)-Open the Truffle Console and Run the Command "truffle exec scripts/issue-tokens.js" and all Ready ;).
++-(3)-Open the Truffle Console and Run the Command "truffle exec scripts/issue-token.js" and all Ready ;).
