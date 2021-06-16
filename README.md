@@ -6,8 +6,6 @@ This DeFi App made for the Ethereum Blockchain in Solidity language consists of 
 
 To build this I used OpenZeppelin Contracts Library to make the development faster and safer and I made Unit Testing with Mocha & Chai.
 
-Made with This Tutorial in Minute 00:01:05 :\_ https://www.youtube.com/watch?v=XLahq4qyors&list=PL0FXkz5ILg9aaZuEB4RUOClau9RBRJVZ3&index=10&t=65s .
-
 +-To run the Project:_
 +-(1)-Open, Configure and Execute Ganache and then Open the Project, open two terminals, and run the Command "truffle migrate --reset" in the First Console and then run the Command "npm run start" in the Second Console.
 +-To Test:_
