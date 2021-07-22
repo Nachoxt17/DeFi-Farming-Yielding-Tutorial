@@ -2,10 +2,10 @@
 const TokenFarm = artifacts.require("TokenFarm");
 
 module.exports = async function (callback) {
+  //+-Code Goes Here.
   let tokenFarm = await TokenFarm.deployed();
   await tokenFarm.issueTokens();
-
-  //+-Code Goes Here.
+  
   console.log("Tokens issued!");
   callback();
 };
